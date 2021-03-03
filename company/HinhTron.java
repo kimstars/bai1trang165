@@ -2,8 +2,8 @@ package com.company;
 
 public class HinhTron {
     private int banKinh;
-    public void HinhTron(){};
-    public void HinhTron(int banKinh){
+    public HinhTron(){};
+    public HinhTron(int banKinh){
         this.banKinh = banKinh;
     }
 
@@ -14,11 +14,11 @@ public class HinhTron {
     public int getBanKinh() {
         return banKinh;
     }
-    public float DienTich(){
-        return (float)(this.banKinh*3.14*this.banKinh);
+    public double DienTich(){
+        return this.banKinh*3.14*this.banKinh;
     }
     @Override
     public String toString(){
-        return "ban kinh hinh tron : "+banKinh;
+        return "ban kinh hinh tron : "+ banKinh;
     }
 }

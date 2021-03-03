@@ -16,8 +16,12 @@ public class HinhTru extends HinhTron{
     public int getChieuCao() {
         return chieuCao;
     }
-    public float TheTich(){
-        return (float)chieuCao*DienTich();
+    public double TheTich(){
+        return chieuCao*DienTich();
+    }
+    @Override
+    public String toString(){
+        return "Thể tích hình trụ là : " + TheTich();
     }
 
 }

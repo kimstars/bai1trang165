@@ -7,6 +7,9 @@ public class KiemTra {
         HinhTru tru = new HinhTru();
         tru.setChieuCao(10);
         tru.setBanKinh(10);
-        System.out.println(tru.TheTich());
+        System.out.println("Thể tích hình trụ : "+tru.TheTich());
+
+        HinhTron tron = new HinhTron(10);
+        System.out.println("Diện tích hình tròn bán kinh :" + tron.getBanKinh() +" là : "+ tron.DienTich());
     }
 }
